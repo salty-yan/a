@@ -40,11 +40,23 @@ def clean_build():
             os.remove(f)
 
 
+def run_check(cmd_args, desc):
+    """运行命令并检查结果，失败时打印错误并退出"""
+    print(f"\n>>> {desc}")
+    r = subprocess.run(cmd_args, cwd=BASE_DIR, capture_output=True, text=True)
+    print(r.stdout.strip()[-1000:] if r.stdout else "(无输出)")
+    if r.returncode != 0:
+        print(f"[错误] {desc} 失败: {r.stderr.strip()[-2000:]}")
+        sys.exit(1)
+    return r
+
+
 def build():
     """使用 PyInstaller 打包"""
     print("=" * 60)
     print("  TarotInsight 打包工具")
     print(f"  当前系统: {'Windows' if IS_WINDOWS else 'macOS' if IS_MAC else 'Linux'}")
+    print(f"  Python: {sys.version}")
     print(f"  将生成: {'TarotInsight.exe' if IS_WINDOWS else 'TarotInsight.app'}")
     print("=" * 60)
 
@@ -53,81 +65,72 @@ def build():
 
     os.chdir(BASE_DIR)
 
-    # 构建 PyInstaller 命令基础列表（不含 main.py）
-    pyinstaller_args = [
+    # 验证关键目录存在
+    for d in ["data", "assets", "assets/cards"]:
+        if not os.path.isdir(d):
+            print(f"[错误] 目录不存在: {d}")
+            sys.exit(1)
+
+    # 验证关键文件
+    for f in ["main.py", "data/tarot_cards.json"]:
+        if not os.path.isfile(f):
+            print(f"[错误] 文件不存在: {f}")
+            sys.exit(1)
+
+    # 验证模块导入
+    run_check(
+        [sys.executable, "-c",
+         "import PyQt5; import matplotlib; import docx; import openpyxl; "
+         "from app.windows.main_window import MainWindow; "
+         "print('所有模块导入成功')"],
+        "验证模块导入"
+    )
+
+    # 统一 PyInstaller 参数
+    common_args = [
         "--name=TarotInsight",
         "--windowed",
         "--onedir",
         f"--add-data=data{SEP}data",
         f"--add-data=assets{SEP}assets",
-        # matplotlib 相关
-        "--hidden-import=matplotlib",
-        "--hidden-import=matplotlib.backends.backend_qt5agg",
-        "--hidden-import=matplotlib.backends.backend_qtagg",
-        # 文档导出
-        "--hidden-import=docx",
-        "--hidden-import=openpyxl",
         "--noconfirm",
         "--clean",
     ]
 
-    # Windows 下额外配置
+    # 使用 --collect-all 确保完整收集 PyQt5 和 matplotlib（避免 hidden-import 遗漏）
     if IS_WINDOWS:
-        pyinstaller_args.extend([
-            "--hidden-import=PIL",
-            "--hidden-import=PIL.Image",
-            "--hidden-import=PyQt5.sip",
-            "--hidden-import=PyQt5.QtCore",
-            "--hidden-import=PyQt5.QtGui",
-            "--hidden-import=PyQt5.QtWidgets",
-        ])
+        common_args.append("--collect-all=PyQt5")
+        common_args.append("--collect-all=matplotlib")
 
-    # 先简单验证能否导入主程序的关键模块
-    print("\n[预检] 测试关键模块导入...")
-    pre_check = subprocess.run(
-        [sys.executable, "-c", "from app.windows.main_window import MainWindow; print('MainWindow OK')"],
-        cwd=BASE_DIR, capture_output=True, text=True
-    )
-    print(f"  导入测试 stdout: {pre_check.stdout.strip()}")
-    if pre_check.returncode != 0:
-        print(f"  导入测试 stderr: {pre_check.stderr.strip()}")
-        print("  ⚠️ 导入测试失败，但继续打包...")
-
-    # 拼接完整命令
-    cmd = [sys.executable, "-m", "PyInstaller"] + pyinstaller_args + ["main.py"]
+    cmd = [sys.executable, "-m", "PyInstaller"] + common_args + ["main.py"]
 
     print(f"\n执行命令:")
     print(" ".join(cmd))
-    print("\n开始打包，请耐心等待（约 2-5 分钟）...\n")
+    print("\n开始打包，请耐心等待（约 3-8 分钟）...\n")
+    sys.stdout.flush()
 
-    result = subprocess.run(cmd, cwd=BASE_DIR, capture_output=True, text=True)
-
-    # 始终打印完整输出
-    if result.stdout:
-        print("=== PyInstaller STDOUT ===")
-        # 只打印最后 200 行，避免输出过长
-        stdout_lines = result.stdout.strip().split('\n')
-        print('\n'.join(stdout_lines[-200:]))
-    if result.stderr:
-        print("=== PyInstaller STDERR ===")
-        print(result.stderr.strip()[-3000:])
+    # 直接用 run 让输出实时显示（GitHub Actions 才能捕获日志）
+    result = subprocess.run(cmd, cwd=BASE_DIR)
 
     if result.returncode == 0:
         print("\n" + "=" * 60)
         print("  打包成功！")
-        if IS_MAC:
-            app_path = os.path.join(DIST_DIR, "TarotInsight.app")
-            if os.path.exists(app_path):
-                print(f"  ✅ {app_path}")
-        elif IS_WINDOWS:
-            exe_path = os.path.join(DIST_DIR, "TarotInsight", "TarotInsight.exe")
-            if os.path.exists(exe_path):
-                print(f"  ✅ {exe_path}")
-        else:
-            print(f"  输出目录: {DIST_DIR}")
+        target = os.path.join(DIST_DIR, "TarotInsight", "TarotInsight.exe" if IS_WINDOWS else "TarotInsight.app")
+        if os.path.exists(target):
+            print(f"  ✅ {target}")
+            # 列出产物大小
+            total_size = 0
+            for root, dirs, files in os.walk(os.path.join(DIST_DIR, "TarotInsight")):
+                for fn in files:
+                    total_size += os.path.getsize(os.path.join(root, fn))
+            print(f"  产物大小: {total_size / 1024 / 1024:.1f} MB")
         print("=" * 60)
     else:
-        print(f"\n打包失败 (返回码={result.returncode})，请查看上方错误信息。")
+        print(f"\n打包失败 (返回码={result.returncode})")
+        # 检查是否有 spec 文件留下
+        if os.path.exists(SPEC_FILE):
+            print(f"  spec 文件保留在: {SPEC_FILE}")
+        sys.exit(1)
         sys.exit(1)
 
 

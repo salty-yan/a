@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+*.spec
+
+# Virtualenv
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database (auto-generated, not needed in repo - will be created on first run)
+data/tarot_app.db
+
+# Export files (user-generated)
+exports/*.txt
+exports/*.docx
+
+# macOS
+*.app

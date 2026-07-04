@@ -1,0 +1,89 @@
+/* ============================================
+   TarotInsight 全局样式表 (QSS)
+   白金色系精致塔罗桌面风格
+   ============================================ */
+
+/* 全局 */
+QWidget {
+    font-family: "PingFang SC", "Heiti SC", "Arial";
+    font-size: 15px;
+    color: #3d3220;
+}
+
+/* 滚动条 */
+QScrollBar:vertical {
+    background: #f3efe5;
+    width: 10px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #c9a84c;
+    border-radius: 5px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #dbb960;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    background: #f3efe5;
+    height: 10px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #c9a84c;
+    border-radius: 5px;
+    min-width: 30px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #dbb960;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* 工具提示 */
+QToolTip {
+    background-color: #fdf9f0;
+    color: #b8860b;
+    border: 1px solid #c9a84c;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 15px;
+}
+
+/* 消息框 */
+QMessageBox {
+    background-color: #faf8f3;
+}
+
+QMessageBox QLabel {
+    color: #3d3220;
+    font-size: 15px;
+}
+
+QMessageBox QPushButton {
+    background-color: #c9a84c;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #dbb960;
+    border: 1px solid #b8860b;
+}

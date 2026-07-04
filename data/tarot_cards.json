@@ -1,0 +1,1339 @@
+{
+  "cards": [
+    {
+      "id": 0,
+      "name_cn": "愚者",
+      "name_en": "The Fool",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "开始",
+        "冒险",
+        "自由",
+        "未知"
+      ],
+      "upright_meaning": "代表新的开始、开放心态和勇敢探索。你正站在一段新旅程的起点，保持好奇心和纯真，勇敢迈出第一步。",
+      "reversed_meaning": "代表冲动鲁莽、准备不足或逃避现实。你可能过于天真或缺乏规划，需要停下来重新审视自己的选择。",
+      "image_path": "assets/cards/0.png"
+    },
+    {
+      "id": 1,
+      "name_cn": "魔术师",
+      "name_en": "The Magician",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "创造",
+        "能力",
+        "意志",
+        "掌控"
+      ],
+      "upright_meaning": "代表创造力、技能和意志力的完美结合。你拥有实现目标所需的一切资源，行动起来，展现你的才能。",
+      "reversed_meaning": "代表能力被滥用、欺骗或缺乏行动力。你可能拥有潜力却未能发挥，或者被表象迷惑。",
+      "image_path": "assets/cards/1.png"
+    },
+    {
+      "id": 2,
+      "name_cn": "女祭司",
+      "name_en": "The High Priestess",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "直觉",
+        "智慧",
+        "神秘",
+        "内省"
+      ],
+      "upright_meaning": "代表深层直觉和内在智慧。相信你的第六感，有些答案不在表面，需要静下心来倾听内心。",
+      "reversed_meaning": "代表忽视直觉、情绪封闭或秘密被隐藏。你可能压抑了自己的感受，或者有重要信息被隐瞒。",
+      "image_path": "assets/cards/2.png"
+    },
+    {
+      "id": 3,
+      "name_cn": "皇后",
+      "name_en": "The Empress",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "丰饶",
+        "滋养",
+        "自然",
+        "母性"
+      ],
+      "upright_meaning": "代表丰盛、创造力和滋养。这是一个成长和收获的时期，善待自己，享受生活中的美好。",
+      "reversed_meaning": "代表依赖、创造力受阻或忽视自我。你可能过度付出而忽略了自己的需求，或陷入物质主义的焦虑。",
+      "image_path": "assets/cards/3.png"
+    },
+    {
+      "id": 4,
+      "name_cn": "皇帝",
+      "name_en": "The Emperor",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "权威",
+        "秩序",
+        "稳定",
+        "领导"
+      ],
+      "upright_meaning": "代表权威、秩序和掌控力。你需要以理性和纪律来面对问题，建立结构化的计划并坚定执行。",
+      "reversed_meaning": "代表专制、缺乏自律或被权威压制。你可能过于控制或相反地缺乏方向感，需要找到平衡。",
+      "image_path": "assets/cards/4.png"
+    },
+    {
+      "id": 5,
+      "name_cn": "教皇",
+      "name_en": "The Hierophant",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "传统",
+        "信仰",
+        "指导",
+        "学习"
+      ],
+      "upright_meaning": "代表传统智慧和正规学习。寻求导师的指导或遵循既定的规则和传统，会找到适合你的道路。",
+      "reversed_meaning": "代表挑战传统、盲目追随或思想僵化。你可能需要打破常规思维，寻找属于自己的信念。",
+      "image_path": "assets/cards/5.png"
+    },
+    {
+      "id": 6,
+      "name_cn": "恋人",
+      "name_en": "The Lovers",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "选择",
+        "关系",
+        "和谐",
+        "价值"
+      ],
+      "upright_meaning": "代表重要的选择和和谐的关系。你面临一个关于价值观的抉择，追随内心真正的渴望。",
+      "reversed_meaning": "代表选择困难、关系失衡或价值观冲突。你可能在逃避决定，或关系中出现不和谐。",
+      "image_path": "assets/cards/6.png"
+    },
+    {
+      "id": 7,
+      "name_cn": "战车",
+      "name_en": "The Chariot",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "胜利",
+        "意志",
+        "前进",
+        "控制"
+      ],
+      "upright_meaning": "代表决心、意志力和胜利。凭借坚定的信念和自律，你能克服困难，朝着目标奋勇前进。",
+      "reversed_meaning": "代表失控、方向错误或意志薄弱。你可能失去了对局势的控制，需要重新调整方向。",
+      "image_path": "assets/cards/7.png"
+    },
+    {
+      "id": 8,
+      "name_cn": "力量",
+      "name_en": "Strength",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "勇气",
+        "耐心",
+        "内在力量",
+        "温柔"
+      ],
+      "upright_meaning": "代表内在的力量和勇气。真正的力量来自耐心和温柔，用爱与理解而非暴力去面对挑战。",
+      "reversed_meaning": "代表自我怀疑、软弱或内在力量被压制。你可能感到力不从心，需要重建自信。",
+      "image_path": "assets/cards/8.png"
+    },
+    {
+      "id": 9,
+      "name_cn": "隐士",
+      "name_en": "The Hermit",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "内省",
+        "孤独",
+        "智慧",
+        "指引"
+      ],
+      "upright_meaning": "代表内省和寻求真理。暂时退一步，通过独处和思考获得更深层的洞察，答案在你的内心。",
+      "reversed_meaning": "代表过度孤立、逃避或拒绝建议。你可能过于封闭自己，需要适当地与外界交流。",
+      "image_path": "assets/cards/9.png"
+    },
+    {
+      "id": 10,
+      "name_cn": "命运之轮",
+      "name_en": "Wheel of Fortune",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "命运",
+        "转折",
+        "机遇",
+        "周期"
+      ],
+      "upright_meaning": "代表命运的转折和新的机遇。好运正在靠近，变化是不可避免的，拥抱即将到来的转变。",
+      "reversed_meaning": "代表坏运气、抗拒变化或无法把握机会。你可能遇到了瓶颈，但记住风水轮流转。",
+      "image_path": "assets/cards/10.png"
+    },
+    {
+      "id": 11,
+      "name_cn": "正义",
+      "name_en": "Justice",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "公平",
+        "真相",
+        "责任",
+        "因果"
+      ],
+      "upright_meaning": "代表公平、真相和责任。你得到应得的结果，做出公正的决定，为自己的行为负责。",
+      "reversed_meaning": "代表不公平、逃避责任或偏见。你可能面临不公正的待遇，或者自己做出了不诚实的决定。",
+      "image_path": "assets/cards/11.png"
+    },
+    {
+      "id": 12,
+      "name_cn": "倒吊人",
+      "name_en": "The Hanged Man",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "牺牲",
+        "等待",
+        "新视角",
+        "放手"
+      ],
+      "upright_meaning": "代表暂停、反思和换一个角度看问题。有时候退一步或放下执念，反而能获得更大的自由。",
+      "reversed_meaning": "代表拖延、无谓牺牲或不愿放手。你可能陷入了僵局，需要主动打破停滞状态。",
+      "image_path": "assets/cards/12.png"
+    },
+    {
+      "id": 13,
+      "name_cn": "死神",
+      "name_en": "Death",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "结束",
+        "转变",
+        "重生",
+        "放下"
+      ],
+      "upright_meaning": "代表结束与新生。某件事即将或需要结束，为新的开始腾出空间。不要害怕变化，它是自然的一部分。",
+      "reversed_meaning": "代表抗拒变化、停滞不前或恐惧结束。你可能紧紧抓住已经不再适合的事物不放。",
+      "image_path": "assets/cards/13.png"
+    },
+    {
+      "id": 14,
+      "name_cn": "节制",
+      "name_en": "Temperance",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "平衡",
+        "调和",
+        "耐心",
+        "中庸"
+      ],
+      "upright_meaning": "代表平衡、调和与适度。找到生活中的中间道路，用耐心和包容来融合对立的力量。",
+      "reversed_meaning": "代表失衡、过度或缺乏协调。你的生活可能失去了平衡，需要重新调整节奏和优先级。",
+      "image_path": "assets/cards/14.png"
+    },
+    {
+      "id": 15,
+      "name_cn": "恶魔",
+      "name_en": "The Devil",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "束缚",
+        "欲望",
+        "物质",
+        "阴影"
+      ],
+      "upright_meaning": "代表束缚和对物质或欲望的过度执着。审视是什么在限制你的自由，你有能力挣脱这些枷锁。",
+      "reversed_meaning": "代表摆脱束缚、觉醒或克服依赖。你正在意识到自己的局限，并开始寻求解放。",
+      "image_path": "assets/cards/15.png"
+    },
+    {
+      "id": 16,
+      "name_cn": "高塔",
+      "name_en": "The Tower",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "突变",
+        "崩塌",
+        "觉醒",
+        "释放"
+      ],
+      "upright_meaning": "代表突如其来的改变和旧结构的崩塌。虽然过程可能痛苦，但这是真相大白的时刻，旧的必须被摧毁才能重建。",
+      "reversed_meaning": "代表避免灾难、推迟改变或内在崩溃。你可能在逃避必要的改变，但压力正在累积。",
+      "image_path": "assets/cards/16.png"
+    },
+    {
+      "id": 17,
+      "name_cn": "星星",
+      "name_en": "The Star",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "希望",
+        "疗愈",
+        "灵感",
+        "宁静"
+      ],
+      "upright_meaning": "代表希望、疗愈和灵感。在经历困难后，你迎来了平静和重生的时刻。保持信心，未来是光明的。",
+      "reversed_meaning": "代表失去希望、缺乏信心或灵感枯竭。你可能感到迷茫和沮丧，但请相信希望从未真正离开。",
+      "image_path": "assets/cards/17.png"
+    },
+    {
+      "id": 18,
+      "name_cn": "月亮",
+      "name_en": "The Moon",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "潜意识",
+        "恐惧",
+        "幻觉",
+        "直觉"
+      ],
+      "upright_meaning": "代表潜意识、直觉和隐藏的真相。你可能感到迷惑，但你的直觉正在引导你穿越黑暗。",
+      "reversed_meaning": "代表恐惧消散、真相浮现或混乱结束。迷雾正在散去，你开始看清事情的本来面目。",
+      "image_path": "assets/cards/18.png"
+    },
+    {
+      "id": 19,
+      "name_cn": "太阳",
+      "name_en": "The Sun",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "快乐",
+        "成功",
+        "活力",
+        "清晰"
+      ],
+      "upright_meaning": "代表快乐、成功和充沛的活力。一切都在朝着积极的方向发展，享受这段阳光灿烂的时光。",
+      "reversed_meaning": "代表暂时的阴霾、延迟的成功或过度乐观。快乐可能被暂时遮蔽，但太阳总会重新升起。",
+      "image_path": "assets/cards/19.png"
+    },
+    {
+      "id": 20,
+      "name_cn": "审判",
+      "name_en": "Judgement",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "觉醒",
+        "重生",
+        "召唤",
+        "评估"
+      ],
+      "upright_meaning": "代表内心的觉醒和重生的召唤。你被召唤去做一个重要的决定或改变，倾听你内心的声音。",
+      "reversed_meaning": "代表自我怀疑、拒绝改变或逃避判断。你可能在回避面对真实的自己，需要勇敢地反思过去。",
+      "image_path": "assets/cards/20.png"
+    },
+    {
+      "id": 21,
+      "name_cn": "世界",
+      "name_en": "The World",
+      "arcana": "大阿卡那",
+      "suit": "",
+      "keywords": [
+        "完成",
+        "圆满",
+        "成就",
+        "旅程"
+      ],
+      "upright_meaning": "代表圆满、完成和成就。一段旅程即将完美收官，你已经达成了重要的目标，值得庆祝。",
+      "reversed_meaning": "代表未完成、延迟或缺少最后一步。你可能接近终点线但还未跨过，需要完成最后的收尾。",
+      "image_path": "assets/cards/21.png"
+    },
+    {
+      "id": 22,
+      "name_cn": "权杖王牌",
+      "name_en": "Ace of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "灵感",
+        "新开始",
+        "热情",
+        "创造力"
+      ],
+      "upright_meaning": "代表新的创意和灵感迸发。一个充满热情的新机会出现了，抓住它并勇敢行动。",
+      "reversed_meaning": "代表灵感受阻、热情消退或起步困难。你可能遇到了创作瓶颈，需要重新点燃内心的火焰。",
+      "image_path": "assets/cards/22.png"
+    },
+    {
+      "id": 23,
+      "name_cn": "权杖二",
+      "name_en": "Two of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "规划",
+        "远见",
+        "抉择",
+        "冒险"
+      ],
+      "upright_meaning": "代表规划和展望未来。你在思考下一步的方向，已有坚实的基础，现在需要制定长远计划。",
+      "reversed_meaning": "代表规划不周、犹豫不决或缺乏远见。你可能对未来感到迷茫，需要重新评估你的目标。",
+      "image_path": "assets/cards/23.png"
+    },
+    {
+      "id": 24,
+      "name_cn": "权杖三",
+      "name_en": "Three of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "扩张",
+        "探索",
+        "远见",
+        "商业"
+      ],
+      "upright_meaning": "代表扩张和探索。你的计划正在顺利展开，现在是时候放眼更广阔的世界并采取行动。",
+      "reversed_meaning": "代表计划受挫、视野狭窄或进展缓慢。你可能遇到了意想不到的障碍，需要调整策略。",
+      "image_path": "assets/cards/24.png"
+    },
+    {
+      "id": 25,
+      "name_cn": "权杖四",
+      "name_en": "Four of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "庆祝",
+        "稳定",
+        "和谐",
+        "家园"
+      ],
+      "upright_meaning": "代表庆祝和稳定的基础。你已完成了阶段性的目标，现在是时候享受成果并与他人分享喜悦。",
+      "reversed_meaning": "代表不稳定、关系紧张或庆祝氛围被打乱。你可能感到根基不稳，需要重建安全感。",
+      "image_path": "assets/cards/25.png"
+    },
+    {
+      "id": 26,
+      "name_cn": "权杖五",
+      "name_en": "Five of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "竞争",
+        "冲突",
+        "挑战",
+        "成长"
+      ],
+      "upright_meaning": "代表竞争和有益的冲突。不同观点的碰撞可能带来成长，在竞争中磨砺自己的能力。",
+      "reversed_meaning": "代表避免冲突、内在矛盾或恶性竞争。你可能在逃避必要的争论，或陷入了无意义的争斗。",
+      "image_path": "assets/cards/26.png"
+    },
+    {
+      "id": 27,
+      "name_cn": "权杖六",
+      "name_en": "Six of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "胜利",
+        "认可",
+        "自信",
+        "领导"
+      ],
+      "upright_meaning": "代表胜利和公众认可。你的努力得到了回报，自信地接受赞美并继续前进。",
+      "reversed_meaning": "代表认可延迟、自大或失败。你可能未能获得期望的肯定，需要反思是否太在意外界评价。",
+      "image_path": "assets/cards/27.png"
+    },
+    {
+      "id": 28,
+      "name_cn": "权杖七",
+      "name_en": "Seven of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "坚持",
+        "防守",
+        "勇气",
+        "立场"
+      ],
+      "upright_meaning": "代表坚持和捍卫自己的立场。虽然面临挑战和压力，但你有足够的勇气和力量守住阵地。",
+      "reversed_meaning": "代表被动放弃、无力抵抗或被压垮。你可能感到无法承受压力，需要考虑是否该战略性撤退。",
+      "image_path": "assets/cards/28.png"
+    },
+    {
+      "id": 29,
+      "name_cn": "权杖八",
+      "name_en": "Eight of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "速度",
+        "行动",
+        "进展",
+        "信息"
+      ],
+      "upright_meaning": "代表迅速的行动和进展。事情正在快速推进，信息和机会接踵而来，保持专注和敏捷。",
+      "reversed_meaning": "代表延迟、混乱或方向错误。进展可能受到了阻碍，需要耐心等待或重新对准目标。",
+      "image_path": "assets/cards/29.png"
+    },
+    {
+      "id": 30,
+      "name_cn": "权杖九",
+      "name_en": "Nine of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "坚持",
+        "韧性",
+        "防守",
+        "最后防线"
+      ],
+      "upright_meaning": "代表坚持和韧性。虽然你已经疲惫，但坚持到最后一步至关重要。你比想象中更坚强。",
+      "reversed_meaning": "代表放弃、脆弱或过度防御。你可能已到达极限，需要休息和调整，而不是一味硬撑。",
+      "image_path": "assets/cards/30.png"
+    },
+    {
+      "id": 31,
+      "name_cn": "权杖十",
+      "name_en": "Ten of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "负担",
+        "责任",
+        "压力",
+        "完成"
+      ],
+      "upright_meaning": "代表沉重的负担和责任。你正背负太多，虽然目标在望，但需要学会分配任务或释放压力。",
+      "reversed_meaning": "代表放下负担、过度劳累或逃避责任。你可能需要减轻自己的负担，学会说「不」。",
+      "image_path": "assets/cards/31.png"
+    },
+    {
+      "id": 32,
+      "name_cn": "权杖侍从",
+      "name_en": "Page of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "热情",
+        "探索",
+        "新消息",
+        "冒险精神"
+      ],
+      "upright_meaning": "代表年轻的好奇心和探索欲。一个新消息或机会即将到来，带着热情和开放的心态去迎接它。",
+      "reversed_meaning": "代表缺乏方向、热情消退或坏消息。你可能面临计划流产或创意受阻的困境。",
+      "image_path": "assets/cards/32.png"
+    },
+    {
+      "id": 33,
+      "name_cn": "权杖骑士",
+      "name_en": "Knight of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "行动",
+        "冒险",
+        "冲动",
+        "激情"
+      ],
+      "upright_meaning": "代表快速的行动和冒险精神。充满激情地追逐目标，但要确保计划周全，避免冲动行事。",
+      "reversed_meaning": "代表冲动鲁莽、半途而废或精力分散。你可能过于急躁，需要降温并重新规划。",
+      "image_path": "assets/cards/33.png"
+    },
+    {
+      "id": 34,
+      "name_cn": "权杖王后",
+      "name_en": "Queen of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "自信",
+        "领导",
+        "温暖",
+        "魅力"
+      ],
+      "upright_meaning": "代表自信、领导力和温暖魅力。你拥有激励他人的力量，保持乐观和坚定，让周围的人感受到你的能量。",
+      "reversed_meaning": "代表缺乏自信、嫉妒或过度主导。你可能变得掌控欲过强或失去对自我价值的信心。",
+      "image_path": "assets/cards/34.png"
+    },
+    {
+      "id": 35,
+      "name_cn": "权杖国王",
+      "name_en": "King of Wands",
+      "arcana": "小阿卡那",
+      "suit": "权杖",
+      "keywords": [
+        "领导力",
+        "愿景",
+        "魄力",
+        "创业"
+      ],
+      "upright_meaning": "代表强大的领导力和远见卓识。以自信和魄力引导前进的方向，用你的愿景激励整个团队。",
+      "reversed_meaning": "代表独断专行、缺乏远见或滥用权力。你可能变得霸道或不切实际，需要重新审视领导方式。",
+      "image_path": "assets/cards/35.png"
+    },
+    {
+      "id": 36,
+      "name_cn": "圣杯王牌",
+      "name_en": "Ace of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "爱",
+        "情感",
+        "新关系",
+        "直觉"
+      ],
+      "upright_meaning": "代表情感的新开始和爱的流动。敞开心扉，让情感的源泉涌出，新的关系和情感机会正在靠近。",
+      "reversed_meaning": "代表情感封闭、爱被压抑或内心空虚。你可能关闭了感受的能力，需要重新学会接纳情感。",
+      "image_path": "assets/cards/36.png"
+    },
+    {
+      "id": 37,
+      "name_cn": "圣杯二",
+      "name_en": "Two of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "合作",
+        "联结",
+        "平等",
+        "和谐"
+      ],
+      "upright_meaning": "代表和谐的关系和深度联结。无论是友情、爱情还是合作，双方处于平衡和互相尊重的状态。",
+      "reversed_meaning": "代表关系失衡、信任破裂或断绝联系。关系中可能出现不平等或误解，需要重新沟通。",
+      "image_path": "assets/cards/37.png"
+    },
+    {
+      "id": 38,
+      "name_cn": "圣杯三",
+      "name_en": "Three of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "友谊",
+        "庆祝",
+        "社群",
+        "欢乐"
+      ],
+      "upright_meaning": "代表友谊和欢聚。享受与朋友和家人在一起的快乐时光，分享你的幸福和成功。",
+      "reversed_meaning": "代表社交疲惫、朋友疏远或过度放纵。你可能需要暂时退出社交圈，给自己一些独处时间。",
+      "image_path": "assets/cards/38.png"
+    },
+    {
+      "id": 39,
+      "name_cn": "圣杯四",
+      "name_en": "Four of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "沉思",
+        "不满",
+        "新机会",
+        "冷漠"
+      ],
+      "upright_meaning": "代表沉思和对现状的不满。你可能对眼前的事物感到厌倦，但新的机会其实就在你面前，需要你抬头去看。",
+      "reversed_meaning": "代表清醒、接受新机会或从沉思中走出。你开始注意到周围的可能性，准备从低迷中走出来。",
+      "image_path": "assets/cards/39.png"
+    },
+    {
+      "id": 40,
+      "name_cn": "圣杯五",
+      "name_en": "Five of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "失去",
+        "悲伤",
+        "遗憾",
+        "复原"
+      ],
+      "upright_meaning": "代表失去和悲伤。你可能沉浸在遗憾之中，但请看到身后仍有两杯立着的希望。",
+      "reversed_meaning": "代表走出悲伤、接受或复原。你正在逐渐从失落中恢复，学会放下并迎接新的开始。",
+      "image_path": "assets/cards/40.png"
+    },
+    {
+      "id": 41,
+      "name_cn": "圣杯六",
+      "name_en": "Six of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "回忆",
+        "怀旧",
+        "纯真",
+        "给予"
+      ],
+      "upright_meaning": "代表怀旧和纯真的回忆。回到过去的美好时光，或者从童年的经验中寻找当下的答案。",
+      "reversed_meaning": "代表沉溺过去、无法前进或理想化。你可能过度活在过去的光环中，忽略了现在和未来。",
+      "image_path": "assets/cards/41.png"
+    },
+    {
+      "id": 42,
+      "name_cn": "圣杯七",
+      "name_en": "Seven of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "幻想",
+        "选择",
+        "诱惑",
+        "白日梦"
+      ],
+      "upright_meaning": "代表丰富的幻想和多重选择。面前有许多可能性，但需要区分哪些是真实的，哪些只是幻影。",
+      "reversed_meaning": "代表现实检验、做出选择或从幻想中清醒。你正在拨开迷雾，开始做出切实可行的决定。",
+      "image_path": "assets/cards/42.png"
+    },
+    {
+      "id": 43,
+      "name_cn": "圣杯八",
+      "name_en": "Eight of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "离开",
+        "寻找",
+        "放下",
+        "追寻理想"
+      ],
+      "upright_meaning": "代表主动离开和寻求更高意义。虽然放弃已有的东西很困难，但你的灵魂在呼唤你去追寻更深的满足。",
+      "reversed_meaning": "代表犹豫不决、害怕改变或固守现状。你可能想离开但没有勇气，或者在逃避真正的问题。",
+      "image_path": "assets/cards/43.png"
+    },
+    {
+      "id": 44,
+      "name_cn": "圣杯九",
+      "name_en": "Nine of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "满足",
+        "愿望实现",
+        "快乐",
+        "享受"
+      ],
+      "upright_meaning": "代表愿望实现和内心的满足。你的努力带来了回报，现在是时候享受成果并感恩生活。",
+      "reversed_meaning": "代表不满足、虚荣或愿望落空。虽然表面看起来不错，但内心可能仍有缺失感。",
+      "image_path": "assets/cards/44.png"
+    },
+    {
+      "id": 45,
+      "name_cn": "圣杯十",
+      "name_en": "Ten of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "幸福",
+        "家庭",
+        "圆满",
+        "和谐"
+      ],
+      "upright_meaning": "代表完美的幸福和家庭和谐。你拥有真正的情感满足，与所爱之人共享这份幸福。",
+      "reversed_meaning": "代表家庭不和、理想破灭或幸福短暂。家庭的和谐被打破，需要重新建立情感纽带。",
+      "image_path": "assets/cards/45.png"
+    },
+    {
+      "id": 46,
+      "name_cn": "圣杯侍从",
+      "name_en": "Page of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "创意",
+        "直觉",
+        "敏感",
+        "情感消息"
+      ],
+      "upright_meaning": "代表创意灵感和情感上的好消息。保持敏感和开放的心态，一个温暖的消息或新的创意正在靠近。",
+      "reversed_meaning": "代表情感不成熟、创意受阻或坏消息。你可能过于敏感或逃避现实的感情问题。",
+      "image_path": "assets/cards/46.png"
+    },
+    {
+      "id": 47,
+      "name_cn": "圣杯骑士",
+      "name_en": "Knight of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "浪漫",
+        "魅力",
+        "追求",
+        "理想主义"
+      ],
+      "upright_meaning": "代表浪漫的追求和魅力。带着理想和憧憬去追寻你的梦想，但要保持现实感和实际的步伐。",
+      "reversed_meaning": "代表不切实际、情绪化或浪漫幻灭。你可能过度理想化某人或某事，需要回归现实。",
+      "image_path": "assets/cards/47.png"
+    },
+    {
+      "id": 48,
+      "name_cn": "圣杯王后",
+      "name_en": "Queen of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "同理心",
+        "关怀",
+        "直觉",
+        "情绪智慧"
+      ],
+      "upright_meaning": "代表深厚的同理心和情绪智慧。用温暖和理解去支持周围的人，相信你的直觉判断。",
+      "reversed_meaning": "代表情绪失控、过度依赖或缺乏边界。你可能变得过于情绪化或承担了太多他人的情绪负担。",
+      "image_path": "assets/cards/48.png"
+    },
+    {
+      "id": 49,
+      "name_cn": "圣杯国王",
+      "name_en": "King of Cups",
+      "arcana": "小阿卡那",
+      "suit": "圣杯",
+      "keywords": [
+        "情绪稳定",
+        "宽容",
+        "智慧",
+        "创造力"
+      ],
+      "upright_meaning": "代表情绪的成熟和稳重。你能够优雅地处理情感问题，用智慧和宽容引导自己和他人。",
+      "reversed_meaning": "代表情绪控制过度、冷漠或情感操纵。你可能压抑了自己的真实感受，或利用情绪影响他人。",
+      "image_path": "assets/cards/49.png"
+    },
+    {
+      "id": 50,
+      "name_cn": "宝剑王牌",
+      "name_en": "Ace of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "清晰",
+        "真理",
+        "决定",
+        "新思维"
+      ],
+      "upright_meaning": "代表清晰的思维和真理的到来。一个重要的洞察或决定即将出现，用理性的力量斩断犹豫。",
+      "reversed_meaning": "代表混乱、错误判断或不理性的思维。你可能陷入思维的迷雾中，需要寻求更清晰的视角。",
+      "image_path": "assets/cards/50.png"
+    },
+    {
+      "id": 51,
+      "name_cn": "宝剑二",
+      "name_en": "Two of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "僵局",
+        "抉择",
+        "逃避",
+        "平衡"
+      ],
+      "upright_meaning": "代表面临艰难的选择和暂时的僵局。你需要冷静下来，整合理智与情感后再做决定。",
+      "reversed_meaning": "代表打破僵局、做出选择或信息过载。僵局正在被打破，你需要面对之前逃避的决定。",
+      "image_path": "assets/cards/51.png"
+    },
+    {
+      "id": 52,
+      "name_cn": "宝剑三",
+      "name_en": "Three of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "伤心",
+        "背叛",
+        "痛苦",
+        "释放"
+      ],
+      "upright_meaning": "代表心碎和痛苦。面对伤害是疗愈的第一步，允许自己感受悲伤，它会帮助你变得更坚强。",
+      "reversed_meaning": "代表走出痛苦、释怀或压抑情绪。你正在从伤痛中恢复，不要压抑情感，让它们自然流动。",
+      "image_path": "assets/cards/52.png"
+    },
+    {
+      "id": 53,
+      "name_cn": "宝剑四",
+      "name_en": "Four of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "休息",
+        "恢复",
+        "冥想",
+        "退隐"
+      ],
+      "upright_meaning": "代表休息和恢复。你需要暂时停下来，通过安静和冥想来恢复精力，给身心充电。",
+      "reversed_meaning": "代表无法休息、过度焦虑或休整结束。你可能难以放松，或者休息过后准备重新投入。",
+      "image_path": "assets/cards/53.png"
+    },
+    {
+      "id": 54,
+      "name_cn": "宝剑五",
+      "name_en": "Five of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "冲突",
+        "胜负",
+        "代价",
+        "骄傲"
+      ],
+      "upright_meaning": "代表冲突和胜负。你可能是胜利者，但要反思这场胜利的代价是否值得，真正的胜利不在击败他人。",
+      "reversed_meaning": "代表和解、放下争斗或反思冲突。你可能希望结束争端，或者意识到继续争执没有意义。",
+      "image_path": "assets/cards/54.png"
+    },
+    {
+      "id": 55,
+      "name_cn": "宝剑六",
+      "name_en": "Six of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "过渡",
+        "疗愈",
+        "前行",
+        "平静"
+      ],
+      "upright_meaning": "代表从困难中过渡向平静。虽然旅途仍有挑战，但你正在离开动荡，驶向更安宁的未来。",
+      "reversed_meaning": "代表停滞、无法前进或情绪包袱。你可能被困在过去的问题中，无法完成过渡。",
+      "image_path": "assets/cards/55.png"
+    },
+    {
+      "id": 56,
+      "name_cn": "宝剑七",
+      "name_en": "Seven of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "策略",
+        "隐秘",
+        "机智",
+        "谨慎"
+      ],
+      "upright_meaning": "代表策略和机智。有时需要以灵活的方式处理问题，保持谨慎并运用你的聪明才智。",
+      "reversed_meaning": "代表暴露、狡诈或计划泄露。你的计划可能被识破，或者需要更诚实透明地行动。",
+      "image_path": "assets/cards/56.png"
+    },
+    {
+      "id": 57,
+      "name_cn": "宝剑八",
+      "name_en": "Eight of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "束缚",
+        "限制",
+        "自我禁锢",
+        "无力感"
+      ],
+      "upright_meaning": "代表自我限制和束缚感。虽然看起来被困住了，但很多限制是你自己的思维造成的，你有能力摆脱。",
+      "reversed_meaning": "代表打破束缚、重新掌控或找到出路。你正在意识到自己的限制并开始采取行动来摆脱。",
+      "image_path": "assets/cards/57.png"
+    },
+    {
+      "id": 58,
+      "name_cn": "宝剑九",
+      "name_en": "Nine of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "焦虑",
+        "噩梦",
+        "担忧",
+        "过度思考"
+      ],
+      "upright_meaning": "代表深度的焦虑和失眠。你被恐惧和担忧所困扰，但大部分担心可能并没有实际依据。",
+      "reversed_meaning": "代表焦虑减轻、寻求帮助或从恐惧中走出。你正在学习应对焦虑，阳光即将穿透黑暗。",
+      "image_path": "assets/cards/58.png"
+    },
+    {
+      "id": 59,
+      "name_cn": "宝剑十",
+      "name_en": "Ten of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "终结",
+        "谷底",
+        "重生",
+        "释放"
+      ],
+      "upright_meaning": "代表痛苦的终结和触底反弹。事情已经到了最糟糕的地步，但也意味着唯一的出路是向上。",
+      "reversed_meaning": "代表抗拒结束、重新振作或旧伤复发。你可能在痛苦中挣扎了太久，但重生的力量正在积蓄。",
+      "image_path": "assets/cards/59.png"
+    },
+    {
+      "id": 60,
+      "name_cn": "宝剑侍从",
+      "name_en": "Page of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "好奇心",
+        "学习",
+        "沟通",
+        "警觉"
+      ],
+      "upright_meaning": "代表求知欲和敏锐的思维。保持好奇心和警觉，新的信息或学习机会即将到来。",
+      "reversed_meaning": "代表谣言、缺乏准备或不成熟的观点。你可能听到不可靠的消息，或者在没有充分准备时发表意见。",
+      "image_path": "assets/cards/60.png"
+    },
+    {
+      "id": 61,
+      "name_cn": "宝剑骑士",
+      "name_en": "Knight of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "迅速",
+        "果断",
+        "冲动",
+        "智力"
+      ],
+      "upright_meaning": "代表迅猛的行动和果断的决策。以敏捷的思维和强大的行动力迅速推进，但要避免过于急进。",
+      "reversed_meaning": "代表鲁莽冲动、不顾后果或攻击性。你可能在未充分思考的情况下就采取行动，需要放慢脚步。",
+      "image_path": "assets/cards/61.png"
+    },
+    {
+      "id": 62,
+      "name_cn": "宝剑王后",
+      "name_en": "Queen of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "智慧",
+        "独立",
+        "清晰判断",
+        "正直"
+      ],
+      "upright_meaning": "代表清晰的判断力和独立思考。以理性和正直看待问题，不受情感干扰地做出明智的决定。",
+      "reversed_meaning": "代表冷酷、偏见或情感隔离。你可能变得过于理性而忽略了情感需求，或者用智慧来伤害他人。",
+      "image_path": "assets/cards/62.png"
+    },
+    {
+      "id": 63,
+      "name_cn": "宝剑国王",
+      "name_en": "King of Swords",
+      "arcana": "小阿卡那",
+      "suit": "宝剑",
+      "keywords": [
+        "权威",
+        "逻辑",
+        "公正",
+        "分析"
+      ],
+      "upright_meaning": "代表理智的权威和公正的判断。以逻辑和清晰的分析来处理复杂问题，做出客观公正的决定。",
+      "reversed_meaning": "代表专制、滥用智力或冷酷无情。你可能变得蛮横不讲理，或用智力和权力来控制他人。",
+      "image_path": "assets/cards/63.png"
+    },
+    {
+      "id": 64,
+      "name_cn": "星币王牌",
+      "name_en": "Ace of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "财富",
+        "机会",
+        "新开始",
+        "物质"
+      ],
+      "upright_meaning": "代表物质层面的新机会和丰盛。一个新的财务、事业或健康方面的机会正在出现，把握它。",
+      "reversed_meaning": "代表错失机会、财务问题或不稳定。你可能错过了好的机会，或在物质层面遇到了困难。",
+      "image_path": "assets/cards/64.png"
+    },
+    {
+      "id": 65,
+      "name_cn": "星币二",
+      "name_en": "Two of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "平衡",
+        "弹性",
+        "多任务",
+        "适应"
+      ],
+      "upright_meaning": "代表在生活中寻求平衡和灵活应对。你正在同时处理多项事务，保持灵活性和幽默感很重要。",
+      "reversed_meaning": "代表失衡、财务困难或手忙脚乱。你可能被过多的事务压得喘不过气，需要重新分配精力。",
+      "image_path": "assets/cards/65.png"
+    },
+    {
+      "id": 66,
+      "name_cn": "星币三",
+      "name_en": "Three of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "合作",
+        "技艺",
+        "学习",
+        "成长"
+      ],
+      "upright_meaning": "代表团队合作和技能的精进。通过协作和不断学习，你的专业能力正在得到认可。",
+      "reversed_meaning": "代表合作失败、技艺不精或缺乏投入。团队协作可能出现问题，或者你需要更认真地提升技能。",
+      "image_path": "assets/cards/66.png"
+    },
+    {
+      "id": 67,
+      "name_cn": "星币四",
+      "name_en": "Four of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "守财",
+        "安全",
+        "控制",
+        "保守"
+      ],
+      "upright_meaning": "代表对物质和安全的守护。你在努力保护自己的资源，但也要关注过度控制是否会限制你的生活。",
+      "reversed_meaning": "代表过度囤积、放开控制或财务混乱。你可能对物质过于执着，或者从封闭中开始打开自己。",
+      "image_path": "assets/cards/67.png"
+    },
+    {
+      "id": 68,
+      "name_cn": "星币五",
+      "name_en": "Five of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "困难",
+        "匮乏",
+        "孤立",
+        "寻求帮助"
+      ],
+      "upright_meaning": "代表物质或精神上的困难和孤立感。你可能正经历匮乏期，但请记得向他人寻求支持和帮助。",
+      "reversed_meaning": "代表走出困境、获得帮助或恢复。困难正在过去，你找到了资源和支持，重新获得稳定。",
+      "image_path": "assets/cards/68.png"
+    },
+    {
+      "id": 69,
+      "name_cn": "星币六",
+      "name_en": "Six of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "给予",
+        "接受",
+        "平衡",
+        "慷慨"
+      ],
+      "upright_meaning": "代表给予与接受的平衡。你处于施或受的位置，记得金钱和资源的流动是双向的。",
+      "reversed_meaning": "代表不平衡的施受、贪婪或被利用。你可能在给予太多或接受中处于不平等的关系。",
+      "image_path": "assets/cards/69.png"
+    },
+    {
+      "id": 70,
+      "name_cn": "星币七",
+      "name_en": "Seven of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "等待",
+        "评估",
+        "耐心",
+        "收获"
+      ],
+      "upright_meaning": "代表耐心的等待和评估。你已经播下种子，现在需要静待果实成熟，同时评估哪些值得继续投入。",
+      "reversed_meaning": "代表收获延迟、投资失败或缺乏耐心。你可能对缓慢的进展感到沮丧，或者之前的投入未见成效。",
+      "image_path": "assets/cards/70.png"
+    },
+    {
+      "id": 71,
+      "name_cn": "星币八",
+      "name_en": "Eight of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "勤奋",
+        "技艺",
+        "专注",
+        "精益求精"
+      ],
+      "upright_meaning": "代表勤奋工作和精进技艺。全身心地投入到你所做的事情中，持续的精进会带来卓越。",
+      "reversed_meaning": "代表粗心、缺乏动力或重复性倦怠。你可能对重复的工作感到厌倦，需要重新找到投入的意义。",
+      "image_path": "assets/cards/71.png"
+    },
+    {
+      "id": 72,
+      "name_cn": "星币九",
+      "name_en": "Nine of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "独立",
+        "享受",
+        "成就",
+        "精致"
+      ],
+      "upright_meaning": "代表独立和自给自足的成就。你已经通过自己的努力建立了舒适的生活，享受属于自己的成果。",
+      "reversed_meaning": "代表依赖、财务不稳定或表面繁荣。你可能过度依赖他人或物质，内心缺乏真正的安全感。",
+      "image_path": "assets/cards/72.png"
+    },
+    {
+      "id": 73,
+      "name_cn": "星币十",
+      "name_en": "Ten of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "丰盛",
+        "传承",
+        "家族",
+        "长期稳定"
+      ],
+      "upright_meaning": "代表物质的丰盛和长期的稳定。不仅是金钱，还包括家族的传承和持久的价值。",
+      "reversed_meaning": "代表家族纷争、财务损失或不稳定。长期建立的稳定可能受到威胁，需要处理根本问题。",
+      "image_path": "assets/cards/73.png"
+    },
+    {
+      "id": 74,
+      "name_cn": "星币侍从",
+      "name_en": "Page of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "学习",
+        "务实",
+        "新技能",
+        "勤奋"
+      ],
+      "upright_meaning": "代表务实的学习和新技能。带着脚踏实地的态度，去掌握新的知识或技能，为未来奠定基础。",
+      "reversed_meaning": "代表学习障碍、缺乏耐心或不切实际。你可能在学习中遇到困难，或者缺乏踏实的态度。",
+      "image_path": "assets/cards/74.png"
+    },
+    {
+      "id": 75,
+      "name_cn": "星币骑士",
+      "name_en": "Knight of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "可靠",
+        "坚持",
+        "效率",
+        "责任"
+      ],
+      "upright_meaning": "代表可靠和坚持不懈。虽然不追求速度，但你以稳健的步伐履行承诺，每一步都踏实可靠。",
+      "reversed_meaning": "代表停滞、懒惰或不负责。你可能缺乏动力推进事情发展，或者在责任面前退缩。",
+      "image_path": "assets/cards/75.png"
+    },
+    {
+      "id": 76,
+      "name_cn": "星币王后",
+      "name_en": "Queen of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "滋养",
+        "务实",
+        "丰盛",
+        "照顾"
+      ],
+      "upright_meaning": "代表务实的滋养和丰盛。你懂得如何照顾自己和他人，以实际的方式创造安全和舒适。",
+      "reversed_meaning": "代表忽视自我、物质焦虑或过度工作。你可能太专注于照顾他人而忘记了自己，需要找回平衡。",
+      "image_path": "assets/cards/76.png"
+    },
+    {
+      "id": 77,
+      "name_cn": "星币国王",
+      "name_en": "King of Pentacles",
+      "arcana": "小阿卡那",
+      "suit": "星币",
+      "keywords": [
+        "财富",
+        "稳定",
+        "成功",
+        "务实"
+      ],
+      "upright_meaning": "代表物质的成功和稳定的财富。你通过务实和坚持达到了事业或财务的高峰，值得信赖和依靠。",
+      "reversed_meaning": "代表财务失败、贪婪或物质主义。你可能过于追求金钱而忽视其他价值，或面临财务上的失误。",
+      "image_path": "assets/cards/77.png"
+    }
+  ],
+  "spreads": [
+    {
+      "name": "单牌指引",
+      "card_count": 1,
+      "description": "快速获取一个方向的指引，适合日常简单问题。",
+      "positions": [
+        {
+          "name": "指引",
+          "meaning": "代表当前最需要关注的方向或核心建议"
+        }
+      ]
+    },
+    {
+      "name": "三牌牌阵",
+      "card_count": 3,
+      "description": "经典的三张牌牌阵，揭示过去的影响、现在的状态和未来的建议。",
+      "positions": [
+        {
+          "name": "过去",
+          "meaning": "代表问题形成的背景或过去的影响因素"
+        },
+        {
+          "name": "现在",
+          "meaning": "代表当前的状态和主要矛盾所在"
+        },
+        {
+          "name": "建议",
+          "meaning": "代表下一步可以采取的行动方向或建议"
+        }
+      ]
+    },
+    {
+      "name": "十字牌阵",
+      "card_count": 5,
+      "description": "较为全面的五张牌牌阵，从多个角度探索问题的深层原因和解决方向。",
+      "positions": [
+        {
+          "name": "现状",
+          "meaning": "代表你当前所处的情况和核心问题"
+        },
+        {
+          "name": "阻碍",
+          "meaning": "代表横亘在你面前的障碍或挑战"
+        },
+        {
+          "name": "内在",
+          "meaning": "代表你内在的想法、感受和潜意识"
+        },
+        {
+          "name": "外在",
+          "meaning": "代表外在环境、他人或外部因素的影响"
+        },
+        {
+          "name": "建议",
+          "meaning": "代表整体建议和可能的最终结果"
+        }
+      ]
+    }
+  ],
+  "question_types": [
+    "学习事业",
+    "人际关系",
+    "情绪状态",
+    "未来选择"
+  ],
+  "interpretation_templates": {
+    "学习事业": {
+      "tone": "关注计划制定、行动力、压力管理和机会把握。",
+      "advice_prefix": "在学习与事业的道路上，",
+      "advice_suffix": "请保持专注和耐心，每一步都是成长的积累。"
+    },
+    "人际关系": {
+      "tone": "关注沟通技巧、信任建立、边界设定和合作关系。",
+      "advice_prefix": "在人际关系方面，",
+      "advice_suffix": "请记住，真诚和理解是所有良好关系的基础。"
+    },
+    "情绪状态": {
+      "tone": "关注自我照顾、情绪释放、内在感受和压力管理。",
+      "advice_prefix": "关于你目前的情绪状态，",
+      "advice_suffix": "请善待自己的感受，每一种情绪都值得被看见和接纳。"
+    },
+    "未来选择": {
+      "tone": "关注风险评估、可能性探索、选择成本和行动建议。",
+      "advice_prefix": "面对未来的选择，",
+      "advice_suffix": "请相信你的直觉和判断力，没有绝对的对错，只有适合你的道路。"
+    }
+  }
+}

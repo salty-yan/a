@@ -82,6 +82,17 @@ def build():
             "--hidden-import=PyQt5.QtWidgets",
         ])
 
+    # 先简单验证能否导入主程序的关键模块
+    print("\n[预检] 测试关键模块导入...")
+    pre_check = subprocess.run(
+        [sys.executable, "-c", "from app.windows.main_window import MainWindow; print('MainWindow OK')"],
+        cwd=BASE_DIR, capture_output=True, text=True
+    )
+    print(f"  导入测试 stdout: {pre_check.stdout.strip()}")
+    if pre_check.returncode != 0:
+        print(f"  导入测试 stderr: {pre_check.stderr.strip()}")
+        print("  ⚠️ 导入测试失败，但继续打包...")
+
     # 拼接完整命令
     cmd = [sys.executable, "-m", "PyInstaller"] + pyinstaller_args + ["main.py"]
 
@@ -89,7 +100,17 @@ def build():
     print(" ".join(cmd))
     print("\n开始打包，请耐心等待（约 2-5 分钟）...\n")
 
-    result = subprocess.run(cmd, cwd=BASE_DIR)
+    result = subprocess.run(cmd, cwd=BASE_DIR, capture_output=True, text=True)
+
+    # 始终打印完整输出
+    if result.stdout:
+        print("=== PyInstaller STDOUT ===")
+        # 只打印最后 200 行，避免输出过长
+        stdout_lines = result.stdout.strip().split('\n')
+        print('\n'.join(stdout_lines[-200:]))
+    if result.stderr:
+        print("=== PyInstaller STDERR ===")
+        print(result.stderr.strip()[-3000:])
 
     if result.returncode == 0:
         print("\n" + "=" * 60)
@@ -106,7 +127,7 @@ def build():
             print(f"  输出目录: {DIST_DIR}")
         print("=" * 60)
     else:
-        print("\n打包失败，请检查错误信息。")
+        print(f"\n打包失败 (返回码={result.returncode})，请查看上方错误信息。")
         sys.exit(1)
 
 

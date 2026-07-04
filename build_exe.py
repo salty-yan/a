@@ -53,27 +53,37 @@ def build():
 
     os.chdir(BASE_DIR)
 
-    # 构建 PyInstaller 命令
-    cmd = [
-        sys.executable, "-m", "PyInstaller",
+    # 构建 PyInstaller 命令基础列表（不含 main.py）
+    pyinstaller_args = [
         "--name=TarotInsight",
         "--windowed",
+        "--onedir",
         f"--add-data=data{SEP}data",
         f"--add-data=assets{SEP}assets",
+        # matplotlib 相关
+        "--hidden-import=matplotlib",
         "--hidden-import=matplotlib.backends.backend_qt5agg",
         "--hidden-import=matplotlib.backends.backend_qtagg",
+        # 文档导出
         "--hidden-import=docx",
         "--hidden-import=openpyxl",
         "--noconfirm",
         "--clean",
-        "main.py"
     ]
 
     # Windows 下额外配置
     if IS_WINDOWS:
-        # 如果安装了 pillow，确保包含
-        cmd.insert(-1, "--hidden-import=PIL")
-        cmd.insert(-1, "--hidden-import=PIL.Image")
+        pyinstaller_args.extend([
+            "--hidden-import=PIL",
+            "--hidden-import=PIL.Image",
+            "--hidden-import=PyQt5.sip",
+            "--hidden-import=PyQt5.QtCore",
+            "--hidden-import=PyQt5.QtGui",
+            "--hidden-import=PyQt5.QtWidgets",
+        ])
+
+    # 拼接完整命令
+    cmd = [sys.executable, "-m", "PyInstaller"] + pyinstaller_args + ["main.py"]
 
     print(f"\n执行命令:")
     print(" ".join(cmd))

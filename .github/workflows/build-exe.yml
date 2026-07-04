@@ -27,6 +27,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: 检查环境
+        run: |
+          python --version
+          pip list | findstr -i "pyqt5 matplotlib pyinstaller pillow"
+          python -c "import PyQt5; print('PyQt5 OK')"
+          python -c "import matplotlib; print('matplotlib OK')"
+          python -c "from PIL import Image; print('Pillow OK')"
+
       - name: 使用 PyInstaller 打包
         run: |
           python build_exe.py

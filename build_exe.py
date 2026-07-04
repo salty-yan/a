@@ -16,6 +16,14 @@ import sys
 import shutil
 import subprocess
 
+# 确保控制台输出支持 UTF-8（Windows GitHub Actions 默认为 cp1252，无法输出中文）
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+        sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+    except Exception:
+        pass
+
 # 项目根目录
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DIST_DIR = os.path.join(BASE_DIR, "dist")

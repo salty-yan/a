@@ -36,6 +36,8 @@ jobs:
           python -c "from PIL import Image; print('Pillow OK')"
 
       - name: 使用 PyInstaller 打包
+        env:
+          PYTHONIOENCODING: utf-8
         run: |
           python build_exe.py --clean
 

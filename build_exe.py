@@ -41,12 +41,12 @@ def clean_build():
 
 
 def run_check(cmd_args, desc):
-    """运行命令并检查结果，失败时打印错误并退出"""
+    """运行命令并检查结果，失败时打印错误并退出（不捕获输出，让日志实时可见）"""
     print(f"\n>>> {desc}")
-    r = subprocess.run(cmd_args, cwd=BASE_DIR, capture_output=True, text=True)
-    print(r.stdout.strip()[-1000:] if r.stdout else "(无输出)")
+    sys.stdout.flush()
+    r = subprocess.run(cmd_args, cwd=BASE_DIR)
     if r.returncode != 0:
-        print(f"[错误] {desc} 失败: {r.stderr.strip()[-2000:]}")
+        print(f"\n[错误] {desc} 失败 (返回码={r.returncode})")
         sys.exit(1)
     return r
 
@@ -97,10 +97,16 @@ def build():
         "--clean",
     ]
 
-    # 使用 --collect-all 确保完整收集 PyQt5 和 matplotlib（避免 hidden-import 遗漏）
+    # 使用 --collect-submodules 收集 PyQt5 和 matplotlib（比 hidden-import 更全面，比 collect-all 更安全不会失败）
     if IS_WINDOWS:
-        common_args.append("--collect-all=PyQt5")
-        common_args.append("--collect-all=matplotlib")
+        common_args.append("--collect-submodules=PyQt5.QtWidgets")
+        common_args.append("--collect-submodules=PyQt5.QtCore")
+        common_args.append("--collect-submodules=PyQt5.QtGui")
+        common_args.append("--collect-submodules=matplotlib")
+        # 确保 matplotlib Qt5Agg 后端也被收集
+        common_args.append("--hidden-import=matplotlib.backends.backend_qt5agg")
+        # 添加日志级别便于排查问题
+        common_args.append("--log-level=INFO")
 
     cmd = [sys.executable, "-m", "PyInstaller"] + common_args + ["main.py"]
 
